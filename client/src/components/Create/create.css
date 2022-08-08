@@ -1,0 +1,88 @@
+#event {
+  width: 30%;
+}
+#event .create_block_container h4 {
+  text-align: center;
+}
+#event .create_block_container .create_block {
+  flex-direction: column;
+}
+#event .create_block_container .create_block div {
+  width: 100%;
+}
+.create_container {
+  width: 60%;
+  margin: auto;
+  min-height: 84vh;
+  padding-top: 16vh;
+  font-family: 'Poppins', sans-serif;
+}
+.create_container .create_block_container {
+  padding: 5%;
+  border-radius: 30px;
+  background: #F6F5FA;
+  border: 0.1rem solid rgba(1, 1, 1, 0.1);
+  box-shadow: 10px 10px 2rem rgba(187, 187, 187, 0.9), -10px -10px 2rem rgba(255, 255, 255, 0.9);
+  text-align: start;
+}
+.create_container .create_block_container .create_block {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.create_container .create_block_container .create_block div {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.create_container .create_block_container .create_block div .field_container .form_input input {
+  height: 35px;
+}
+.create_container .create_block_container .create_block div .field_container select {
+  height: 55px;
+}
+.create_container .create_block_container .create_block div .field_container textarea {
+  padding: 8.5px 10px 8.5px 16px;
+  resize: none;
+  height: 100px;
+}
+.create_container .create_block_container .create_block div .file_choose {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 1.2em;
+  width: 100%;
+}
+.create_container .create_block_container .create_block div .file_choose img {
+  width: 25%;
+}
+.create_container .create_block_container .create_block div .file_choose input {
+  width: 70%;
+}
+.create_container .create_block_container .create_block div .file_choose.empty img {
+  width: 0;
+  height: 0;
+}
+.create_container .create_block_container .create_block div .file_choose.empty input {
+  width: 100%;
+}
+.create_container .create_block_container .create_block div .error_field {
+  width: 100%;
+}
+.create_container .create_block_container .create_block div a {
+  text-decoration: none;
+  color: #5C72E8;
+}
+.create_container .create_block_container .create_block div .field_container {
+  width: 100%;
+}
+.create_container .create_block_container .create_block div .field_container input {
+  margin-top: 0.5em;
+}
+.create_container .create_block_container .create_block div button {
+  margin-top: 1.5em;
+}
+.create_container h3 {
+  margin: 1em 0;
+}

@@ -1,0 +1,30 @@
+.event_card_container {
+  width: 350px;
+  height: 350px;
+  border-radius: 2em;
+  background: transparent;
+  text-align: start;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 10px 10px 2rem rgba(187, 187, 187, 0.9), -10px -10px 2rem rgba(255, 255, 255, 0.9);
+}
+.event_card_container img {
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
+.event_card_container .content {
+  padding: 30px;
+  z-index: 10;
+  position: absolute;
+  bottom: -70%;
+  transition: all 0.4s;
+  background: #F6F5FA;
+  border-radius: 15px;
+  width: 290px;
+  height: 350px;
+}
+.event_card_container:hover .content {
+  cursor: pointer;
+  transform: translateY(-46%);
+}

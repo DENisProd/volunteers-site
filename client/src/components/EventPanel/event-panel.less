@@ -1,0 +1,166 @@
+@import '../../utils/colors';
+
+.event_panel_container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 8em;
+  display: flex;
+  justify-content: space-between;
+  min-height: 82vh;
+  text-align: start;
+  font-family: 'Poppins', sans-serif;
+
+  input {
+    outline: none;
+    border: @border;
+    border-radius: 1em;
+    background: @background;
+    color: @text_mini;
+    box-shadow: @shadow_inner;
+    font-weight: 400;
+    padding: 0 10px;
+  }
+
+  button {
+    outline: none;
+    border: none;
+    box-shadow: @green_shadow;
+    background: @green;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 1em;
+    padding: 5px 10px;
+    cursor: pointer;
+
+    &.red {
+      background: @red;
+      box-shadow: @red_shadow;
+    }
+
+    &.blue {
+      background: @blue;
+      box-shadow: @blue_shadow;
+    }
+  }
+
+  .event_panel_sidebar {
+    width: 18%;
+    padding: 1%;
+    background: @background;
+    border: @border;
+    box-shadow: @shadow;
+    border-radius: 2em;
+
+    button {
+      margin: 1em 0 2em 0;
+    }
+
+    img {
+      width: 100%;
+      height: 160px;
+      border-radius: 1em;
+    }
+
+    #event_panel_qr {
+      height: 200px;
+      width: 200px;
+      margin: 0 auto;
+    }
+
+    h3 {
+      font-weight: 600;
+    }
+
+    h4 {
+      font-weight: 300;
+    }
+
+    h3, h4 {
+      margin: 0.5em 0;
+    }
+  }
+
+  .event_panel_content {
+    width: 74%;
+    padding: 0 2%;
+    border-radius: 2em;
+
+    .event_panel_block {
+      display: flex;
+      justify-content: space-between;
+      margin: 2em 0;
+
+      button, input {
+        height: 30px;
+      }
+
+    }
+
+    h1 {
+      color: @text_title
+    }
+
+    table {
+      border-collapse: separate;
+      border-spacing: 0 1em;
+      width: 100%;
+
+      tr {
+        background-color: #fff;
+        border: @border;
+        box-shadow: @shadow_mini;
+
+        td {
+          padding: 5px 20px;
+
+          img {
+            width: 50px;
+            height: 50px;
+          }
+
+          h3 {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: @text_title;
+            margin: 0;
+          }
+
+          a {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: #000000;
+            margin: 0;
+          }
+
+          div {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 16px;
+            color: #000000;
+
+            input {
+              width: 50px;
+              height: 25px;
+              margin: 0 10px;
+            }
+
+          }
+        }
+      }
+
+      tr td:first-of-type {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+
+      tr td:last-of-type {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+
+    }
+  }
+}

@@ -1,0 +1,116 @@
+.main_container {
+  width: 80%;
+  margin: auto;
+  min-height: 88vh;
+  padding-top: 12vh;
+  font-family: 'Poppins', sans-serif;
+}
+.main_container h1 {
+  color: #404040;
+  font-weight: 700;
+  text-align: start;
+  margin: 2em 0 1em 0;
+}
+.main_block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.main_block .tags {
+  height: 26px;
+  display: flex;
+  justify-content: space-around;
+  min-width: 600px;
+}
+.main_block .tags button {
+  height: 100%;
+  border: 0;
+  outline: 0;
+  padding: 5px 10px;
+  border-radius: 1rem;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+}
+.main_block .tags button.blue {
+  background: #5C72E8;
+  box-shadow: 0px 0px 15px #7BC0FF;
+}
+.main_block .tags button.blue1 {
+  background: #5585FF;
+  box-shadow: 0px 0px 15px #5585FF;
+}
+.main_block .tags button.pink {
+  background: #EC78D9;
+  box-shadow: 0px 0px 15px rgba(236, 120, 217, 0.74);
+}
+.main_block .tags button.green {
+  background: #6BE2B8;
+  box-shadow: 0px 0px 15px #6BE2B8;
+}
+.main_block .tags button.yellow {
+  background: #ECD978;
+  box-shadow: 0px 0px 15px rgba(236, 217, 120, 0.74);
+}
+.main_block .tags button.cyan {
+  background: #49DEE7;
+  box-shadow: 0px 0px 15px rgba(73, 222, 231, 0.74);
+}
+.main_block .tags button.red {
+  background: #FF4E5D;
+  box-shadow: 0px 0px 15px rgba(255, 78, 93, 0.74);
+}
+.main_block .tags button.purple {
+  background: #DE73F9;
+  box-shadow: 0px 0px 15px rgba(222, 115, 249, 0.74);
+}
+.main_block .sorting {
+  width: 450px;
+  display: flex;
+  justify-content: space-around;
+  margin: 2em 0 3em 0;
+}
+.main_block .sorting button {
+  font-weight: 500;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 1em;
+}
+.main_block .sorting button.active {
+  font-weight: 700;
+}
+.main_block input {
+  width: 330px;
+  height: 25px;
+  border-radius: 1rem;
+  border: 0;
+  box-shadow: inset 2px 2px 0.5rem rgba(187, 187, 187, 0.8), inset -2px -2px 0.5rem rgba(255, 255, 255, 0.8);
+  background: #F6F5FA;
+  color: #7A7E85;
+  font-size: 20px;
+  padding: 5px 10px;
+  font-weight: 600;
+  border: 0.1rem solid rgba(1, 1, 1, 0.1);
+}
+.main_block input:focus {
+  outline: 0;
+}
+.main_block input:-moz-placeholder {
+  color: #B1B1B1;
+}
+.main_block input::-webkit-input-placeholder {
+  color: #B1B1B1;
+}
+.main_block input::placeholder {
+  color: #B1B1B1;
+}
+#list-block {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  align-items: center;
+  grid-gap: 40px;
+  padding-bottom: 5em;
+}

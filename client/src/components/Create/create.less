@@ -1,0 +1,119 @@
+@import "../../utils/colors";
+
+#event {
+  width: 30%;
+
+  .create_block_container {
+    h4 {
+      text-align: center;
+    }
+    .create_block {
+      flex-direction: column;
+
+      div {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.create_container {
+  width: 60%;
+  margin: auto;
+  min-height: 84vh;
+  padding-top: 16vh;
+  font-family: 'Poppins', sans-serif;
+
+  .create_block_container {
+    padding: 5%;
+    border-radius: 30px;
+    background: @background;
+    border: @border;
+    box-shadow: @shadow;
+    text-align: start;
+
+    .create_block {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+
+      div {
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+
+        .field_container {
+
+          .form_input input {
+            height: 35px;
+          }
+
+          select {
+            height: 55px;
+          }
+
+          textarea {
+            padding: 8.5px 10px 8.5px 16px;
+            resize: none;
+            height: 100px;
+          }
+        }
+
+        .file_choose {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+          margin-top: 1.2em;
+          width: 100%;
+
+          img {
+            width: 25%;
+          }
+
+          input {
+            width: 70%;
+          }
+
+        }
+
+        .file_choose.empty{
+            img {
+              width: 0;
+              height: 0;
+            }
+
+            input {
+              width: 100%;
+            }
+          }
+
+        .error_field {
+          width: 100%;
+        }
+
+        a {
+          text-decoration: none;
+          color: @blue;
+        }
+
+        .field_container {
+          width: 100%;
+
+          input {
+            margin-top: 0.5em;
+          }
+        }
+
+        button {
+          margin-top: 1.5em;
+        }
+      }
+
+    }
+  }
+
+  h3 {
+    margin: 1em 0;
+  }
+}

@@ -1,0 +1,25 @@
+@import "../../utils/colors";
+
+.my_org_container {
+  width: 80%;
+  margin: auto;
+  min-height: 88vh;
+  padding-top: 12vh;
+  font-family: 'Poppins', sans-serif;
+
+  h2 {
+    text-align: start;
+    margin: 1em 0 2em 0;
+    color: @text_title;
+  }
+
+  .my_org_cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .org_card_container {
+      width: 49%;
+    }
+  }
+}

@@ -1,0 +1,139 @@
+@import "../../utils/colors";
+
+.main_container {
+  width: 80%;
+  margin: auto;
+  min-height: 88vh;
+  padding-top: 12vh;
+  font-family: 'Poppins', sans-serif;
+
+  h1 {
+    color: @text_title;
+    font-weight: 700;
+    text-align: start;
+    margin: 2em 0 1em 0;
+  }
+}
+
+.main_block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .tags {
+    height: 26px;
+    display: flex;
+    justify-content: space-around;
+    min-width: 600px;
+
+    button {
+      height: 100%;
+      border: 0;
+      outline: 0;
+      padding: 5px 10px;
+      border-radius: 1rem;
+      color: #FFFFFF;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 0.03em;
+
+      &.blue {
+        background: @blue;
+        box-shadow: @blue_shadow;
+      }
+
+      &.blue1 {
+        background: @blue1;
+        box-shadow: @blue1_shadow;
+      }
+
+      &.pink {
+        background: @pink;
+        box-shadow: @pink_shadow;
+      }
+
+      &.green {
+        background: @green;
+        box-shadow: @green_shadow;
+      }
+
+      &.yellow {
+        background: @yellow;
+        box-shadow: @yellow_shadow;
+      }
+
+      &.cyan {
+        background: @cyan;
+        box-shadow: @cyan_shadow;
+      }
+
+      &.red {
+        background: @red;
+        box-shadow: @red_shadow;
+      }
+
+      &.purple {
+        background: @purple;
+        box-shadow: @purple_shadow;
+      }
+    }
+  }
+
+  .sorting {
+    width: 450px;
+    display: flex;
+    justify-content: space-around;
+    margin: 2em 0 3em 0;
+
+    button {
+      font-weight: 500;
+      background: transparent;
+      border: 0;
+      outline: 0;
+      font-size: 1em;
+
+      &.active {
+        font-weight: 700;
+      }
+    }
+  }
+
+  input {
+    width: 330px;
+    height: 25px;
+    border-radius: 1rem;
+    border: 0;
+    box-shadow: @shadow_inner;
+    background: @background;
+    color: @text_bold;
+    font-size: 20px;
+    padding: 5px 10px;
+    font-weight: 600;
+    border: @border;
+
+    &:focus {
+      outline: 0;
+    }
+
+    &:-moz-placeholder {
+      color: @text_mini;
+    }
+
+    &::-webkit-input-placeholder {
+      color: @text_mini;
+    }
+
+    &::placeholder {
+      color: @text_mini;
+    }
+  }
+}
+
+#list-block {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+  align-items: center;
+  grid-gap: 40px;
+  padding-bottom: 5em;
+}

@@ -1,0 +1,95 @@
+@import "../../utils/colors";
+
+header {
+  width: 81vw;
+  height: 90px;
+  background: @background;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 9vw 0 10vw;
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+  z-index: 100;
+  box-shadow: @shadow;
+
+  .logo {
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    color: @blue2;
+
+    span {
+      margin-left: 0.5em;
+    }
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    min-width: 500px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    margin-right: 1vw;
+
+    a {
+      color: @text_title;
+      text-decoration: none;
+      transition: all 0.1s;
+      border-bottom: 2px solid @background;
+
+      &.active {
+        font-weight: 700;
+      }
+
+      &:hover {
+        border-bottom: 2px solid @text_title;
+      }
+    }
+  }
+
+  .profile {
+    height: 100%;
+    align-items: center;
+    display: flex;
+    transition: all 0.4s;
+    padding: 0 1vw;
+    text-decoration: none;
+
+    div {
+      margin-right: 0.5em;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      font-size: 16px;
+
+      .name {
+        font-weight: 800;
+        color: @text_title;
+      }
+
+      .balance {
+        font-weight: 600;
+        color: @blue1;
+        text-shadow: 0px 0px 4px rgba(85, 133, 255, 0.31);
+      }
+    }
+
+    img {
+      height: 50px;
+      width: 50px;
+    }
+
+    &.active {
+      background: #EEF0F9;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background: #EEF0F9;
+    }
+  }
+
+}

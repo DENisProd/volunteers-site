@@ -1,0 +1,58 @@
+@import "../../../utils/colors";
+
+.user_card_container {
+  width: 260px;
+  height: 280px;
+  background: @background;
+  border: @border;
+  box-shadow: @shadow;
+  padding: 10px;
+  border-radius: 2em;
+  margin-top: 1em;
+  transition: all 0.4s;
+  z-index: 1;
+
+  div {
+    width: 130px;
+    height: 130px;
+    border-radius: 10em;
+    background: @background;
+    box-shadow: @shadow_inner;
+    border: @border;
+    margin: auto;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  h3 {
+    margin: 0.8em 0 0.1em 0;
+    color: @text_title;
+    font-weight: 600;
+  }
+
+  h4 {
+    margin: 0.1em 0;
+    color: @text_bold;
+    font-weight: 500;
+
+    span {
+      color: @blue;
+      text-shadow: 2px 2px 10px rgba(92, 114, 232, 0.51);
+    }
+  }
+
+  h2 {
+    margin: 0.4em 0;
+    color: @text_mini;
+    font-weight: 900;
+
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(0.98);
+  }
+}

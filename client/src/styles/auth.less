@@ -1,0 +1,71 @@
+@import "../utils/colors";
+
+.form__container {
+  width: 100%;
+  min-height: 100vh;
+  /*padding-top: 10%;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  font-family: 'Poppins', sans-serif;
+
+  .form {
+    width: 500px;
+    min-height: 300px;
+    box-shadow: @shadow;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 2% 5%;
+    border-radius: 2rem;
+    border: @border;
+    background: @background;
+
+    h1 {
+      margin-top: 1em;
+      color: @text_title;
+      margin-bottom: 1em;
+    }
+
+    h4 {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 1em;
+
+      a {
+        color: @blue;
+        text-decoration: none;
+      }
+    }
+
+    h5 {
+      margin-top: 0.2em;
+      color: @text_error;
+    }
+
+    button {
+      margin-top: 1.5em;
+    }
+  }
+}
+
+.form_btn {
+  height: 55px;
+  border-radius: 2rem;
+  border: 0;
+  font-weight: 600;
+  font-size: 20px;
+  background: @blue;
+  color: #FFFFFF;
+  box-shadow: @shadow;
+  transition: all 0.4s;
+
+  &:hover {
+    cursor: pointer;
+    background: @blue1;
+    box-shadow: @shadow_inner;
+    transform: scale(0.96);
+  }
+}
+

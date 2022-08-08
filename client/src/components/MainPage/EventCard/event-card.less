@@ -1,0 +1,36 @@
+@import "../../../utils/colors";
+
+.event_card_container {
+  width: 350px;
+  height: 350px;
+  border-radius: 2em;
+
+  background: transparent;
+  text-align: start;
+  overflow: hidden;
+  position: relative;
+  box-shadow: @shadow;
+
+  img {
+    width: 100%;
+    height: auto;
+    z-index: 0;
+  }
+
+  .content {
+    padding: 30px;
+    z-index: 10;
+    position: absolute;
+    bottom: -70%;
+    transition: all 0.4s;
+    background: @background;
+    border-radius: 15px;
+    width: 290px;
+    height: 350px;
+  }
+
+  &:hover .content{
+    cursor: pointer;
+    transform: translateY(-46%);
+  }
+}

@@ -1,0 +1,72 @@
+.view {
+  height: 500px;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: 10px 10px 2rem rgba(187, 187, 187, 0.9), -10px -10px 2rem rgba(255, 255, 255, 0.9);
+  margin-top: 2em;
+  width: 70%;
+  font-family: 'Poppins', sans-serif;
+}
+.view_main_block {
+  background: #F6F5FA;
+  box-shadow: 10px 10px 2rem rgba(187, 187, 187, 0.9), -10px -10px 2rem rgba(255, 255, 255, 0.9);
+  border-radius: 2em;
+  width: 72%;
+  margin-top: 2em;
+  text-align: start;
+}
+.view_main_block h2,
+.view_main_block h3,
+.view_main_block p {
+  margin: 1em;
+}
+.view_main_block h2 {
+  color: #404040;
+  font-weight: 700;
+}
+.view_main_block p {
+  color: #404040;
+  font-weight: 300;
+}
+.view_main_block .view_img_container {
+  height: 500px;
+  overflow: hidden;
+}
+.view_main_block .view_img_container img {
+  width: 100%;
+  border-radius: 2em;
+}
+.view_main_block .view_double_block {
+  height: 400px;
+  display: flex;
+}
+.view_main_block .view_double_block img {
+  width: 50%;
+  border-radius: 0 2em 2em 0;
+}
+.view_main_block .view_double_block div {
+  margin: 0 2em;
+}
+.view-sidebar {
+  margin-top: 2em;
+  background: none;
+  width: 21%;
+  border-radius: 2em;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  box-shadow: inset 2px 2px 0.5rem rgba(187, 187, 187, 0.8), inset -2px -2px 0.5rem rgba(255, 255, 255, 0.8);
+}
+.view-sidebar .qr {
+  margin-top: 2em;
+}
+.view-sidebar h4,
+.view-sidebar h3,
+.view-sidebar h2 {
+  margin: 0.5em 0;
+}
+.view-sidebar button {
+  margin-top: 1em;
+}

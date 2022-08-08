@@ -1,0 +1,25 @@
+.org_card_container {
+  min-width: 600px;
+  height: 240px;
+  border-radius: 3em;
+  background: #F6F5FA;
+  box-shadow: 10px 10px 2rem rgba(187, 187, 187, 0.9), -10px -10px 2rem rgba(255, 255, 255, 0.9);
+  margin-bottom: 2em;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.org_card_container img {
+  width: 340px;
+}
+.org_card_container .org_card_text {
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding: 10px 20px;
+}
+.org_card_container .org_card_text h4 {
+  margin: 0.5em 0 0 0;
+}

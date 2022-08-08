@@ -1,0 +1,30 @@
+@import "../../../utils/colors";
+
+.org_card_container {
+  min-width: 600px;
+  height: 240px;
+  border-radius: 3em;
+  background: @background;
+  box-shadow: @shadow;
+  margin-bottom: 2em;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+
+  img {
+    width: 340px;
+  }
+
+  .org_card_text {
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 10px 20px;
+
+    h4 {
+      margin: 0.5em 0 0 0;
+    }
+  }
+}
