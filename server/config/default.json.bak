@@ -1,0 +1,5 @@
+{
+  "serverPort": 5000,
+  "dbUrl": "mongodb://localhost:27017/my-password-storage",
+  "secretKey": "hackaton-10062022"
+}
